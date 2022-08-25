@@ -1,0 +1,30 @@
+
+
+<div class="hero">
+    <nav (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+        <h4><span style="margin-right: 10px;">CRP</span><span class="span">Regulatory PLatform</span></h4>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About CRP</a></li>
+            <li><a href="#">Bulletin</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+
+        
+
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <!--<input type="text" placeholder="search"/>-->
+        <button type="button">Sign In</button>
+        <label for="check" class="checkbtn" (click)="toggle()" [ngClass]="toggled?'toggleshow': 'togglehide'">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        
+    </nav>
+</div>
